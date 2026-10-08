@@ -15,7 +15,50 @@
       <h1>Picture This!</h1>
       <h4>My Really Cool Blog Post</h4>
     </div>
-    <img src="images/museum.jpg" alt="placeholder">
+
+<!--I put the largest screen sizes first because the browser uses
+the first source that matches. I use square images from 960px
+and landscape images below 960px. The 1x, 2x and 3x versions
+provide different resolutions for different screen densities.
+
+ChatGPT provided each source block step by step and helped
+correct my source tags . I created the image files in Photoshop-->
+
+
+    <picture>
+  <source
+    srcset="images/museum-square-800.jpg 1x,
+            images/museum-square-1600.jpg 2x,
+            images/museum-square-2400.jpg 3x"
+    media="(min-width: 1600px)">
+      <source
+    srcset="images/museum-square-640.jpg 1x,
+            images/museum-square-1280.jpg 2x,
+            images/museum-square-1920.jpg 3x"
+    media="(min-width: 1280px)">
+      <source
+    srcset="images/museum-square-480.jpg 1x,
+            images/museum-square-960.jpg 2x,
+            images/museum-square-1440.jpg 3x"
+    media="(min-width: 960px)">
+      <source
+    srcset="images/museum-landscape-720.jpg 1x,
+            images/museum-landscape-1440.jpg 2x,
+            images/museum-landscape-2160.jpg 3x"
+    media="(min-width: 720px)">
+      <source
+    srcset="images/museum-landscape-480.jpg 1x,
+            images/museum-landscape-960.jpg 2x,
+            images/museum-landscape-1440.jpg 3x"
+    media="(min-width: 480px)">
+      <source
+    srcset="images/museum-landscape-320.jpg 1x,
+            images/museum-landscape-640.jpg 2x,
+            images/museum-landscape-960.jpg 3x"
+    media="(width: 480px)">
+  <img src="images/museum.jpg" alt="Paintings and benches inside a museum gallery">
+    
+</picture>
 
   </header>
 </body>
