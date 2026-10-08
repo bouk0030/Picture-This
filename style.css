@@ -34,8 +34,7 @@ picture {
 }
 
 img { 
-  /* The image fills its column and keeps its proportions.
-   AI prompt: I asked for help adjusting the image size in CSS. */
+  /* The image fills its column and keeps its proportions.*/
 
   display: block;
   width: 100%;
