@@ -29,8 +29,13 @@ h4 {
   font-weight: 300;
 }
 
-img {
+img { 
+  /* The image fills its column and keeps its proportions.
+   AI prompt: I asked for help adjusting the image size in CSS. */
+   
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 @media (min-width: 960px) {
